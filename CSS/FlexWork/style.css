@@ -1,0 +1,43 @@
+/* body{
+    background-color: aqua;
+} */
+
+.container{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    judtify-content: space evenly;
+    background-color: cadetblue;
+    border: 1px solid red;
+     /* gap: 10px;  */
+}
+.child1{
+    height: 300px;
+    width: 300px;
+    background-color: chocolate;
+    border: 1px solid black;
+    order: 2;
+   
+}
+.child2{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    border: 1px solid rgb(10, 208, 13);
+   
+}
+.child3{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    border: 1px solid black;
+   
+}
+.child4{
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+    border: 1px solid rgb(199, 3, 3);
+   
+}
