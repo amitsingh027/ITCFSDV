@@ -77,14 +77,14 @@
 
 
 //PROMISE
-const myPromise = new Promise((resolve, reject) => {
-   const password="7869gh#$"; 
-    if (password.length>8) {
-        resolve("Password length is ok");
-    } else {
-        reject("Password length is not as per our policy");
-    }
-});
+// const myPromise = new Promise((resolve, reject) => {
+//    const password="7869gh#$"; 
+//     if (password.length>8) {
+//         resolve("Password length is ok");
+//     } else {
+//         reject("Password length is not as per our policy");
+//     }
+// });
 
 // myPromise.then((result)=>{
 //     console.log(result)
@@ -94,7 +94,98 @@ const myPromise = new Promise((resolve, reject) => {
 //     console.log("All the resources have closed successfully")
 // })
 
- async function handleData(){
-    const data= await myPromise;
+//  async function handleData(){
+//     const data= await myPromise;
+// }
+// handleData();
+
+
+
+
+//FETCH API
+
+
+    // var recipe = jsonData.recipes[0];
+    // disp.innerHTML = "<h2>ID: "+ recipe.id +"</h2>" +
+    //                  "<h2>Name: "+ recipe.name +"</h2>" +
+    //                  "<img src='"+ recipe.image +"' alt='"+ recipe.name + "'width='200'>";
+    
+//  const button = document.getElementById("btn");
+// const disp = document.getElementById("disp");
+// let table = '<table border="1">';
+// async function fetchData() {
+//     disp.innerHTML = "<h2>Data is Loading...</h2>";
+//     const response = await fetch('https://dummyjson.com/recipes');
+//     const jsonData = await response.json();
+//     console.log(jsonData);
+//     jsonData.recipes.forEach(Element => {
+//        table += `<tr>
+//        <td><img src='${Element.image}' height=200 width=200 alt='image'></td>
+//        <td>${Element.id}</td>
+//        <td>${Element.name}</td>
+//        <td>${Element.ingredients}</td>
+//        </tr>`;
+//     });
+//     table += '</table>';
+//     disp.innerHTML = table;
+// }
+
+// const style = document.createElement('style');
+// style.innerHTML = `
+//     table {
+//         border-collapse: collapse;
+//         width: 100%;
+//         margin-top: 20px;
+//         font-family: Arial, sans-serif;
+//         box-shadow: 0 0 15px rgba(0,0,0,0.1);
+//     }
+//     table th, table td {
+//         padding: 10px;
+//         text-align: left;
+//         border: 1px solid #ccc;
+//     }
+//     table th {
+//         background: linear-gradient(45deg, #ff6a00, #ee0979);
+//         color: white;
+//         font-size: 16px;
+//     }
+//     table tr:nth-child(even) {
+//         background-color: #f090a8ff;
+//     }
+//     table tr:hover {
+//         background-color: #d40d17ff;
+//     }
+//     h2 {
+//         color: #ee0979;
+//         font-family: Arial, sans-serif;
+//     }
+// `;
+// document.head.appendChild(style);
+
+// button.addEventListener('click', fetchData);
+
+
+// fetch use Data
+const button = document.getElementById("btn");
+const disp = document.getElementById("disp");
+let table = '<table border="1">';
+async function fetchData() {
+    disp.innerHTML = "<h2>Data is Loading...</h2>";
+    const response = await fetch('https://dummyjson.com/users'); // fetch users data
+    const jsonData = await response.json();
+    console.log(jsonData);
+    jsonData.users.forEach(user => {
+        table += `<tr>
+            <td><img src="${user.image}" alt="User Image" width="100" height="100"></td>
+            <td>${user.id}</td>
+            <td>${user.firstName}</td>
+            <td>${user.lastName}</td>
+            <td>${user.maidenName}</td>
+            <td>${user.age}</td>
+        </tr>`;
+    });
+    table += '</table>';
+    disp.innerHTML = table;
 }
-handleData();
+
+button.addEventListener('click', fetchData);
