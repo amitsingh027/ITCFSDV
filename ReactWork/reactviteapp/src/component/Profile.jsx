@@ -1,13 +1,21 @@
-import React from 'react'
+import React from 'react';
+import './profile.css';
 
-function Profile() {
+function Profile({ data }) {
   return (
-    <div>
-        <h3>This is my Profile Page</h3>
-        <img src="https://www.flexjobs.com/blog/wp-content/uploads/2022/06/07130847/How-to-Put-Your-Work-Samples-Online.jpg" height={200} width={200} alt="" />
+    <div className="container">
+      <img
+        src={data.pic}
+        alt={data.name}
+        height="150"
+        width="150"
+      />
+      <h2>{data.name}</h2>
+      <p>Branch: {data.branch}</p>
+      <p>Section: {data.section}</p>
+      <p>College: {data.college}</p>
     </div>
-
-  )
+  );
 }
 
-export default Profile
+export default Profile;

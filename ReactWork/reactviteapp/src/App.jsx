@@ -3,15 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Profile from './component/Profile'
+import Gallery from './component/gallery'
 
 function App() {
   return (
     <>
     <div className='container' >
-     <h2>Welcome to React and Vite App</h2>
-     <h3>
-      <Profile />
-     </h3>
+     <h2 >Gallary</h2>
+     <Gallery/>
+
      </div>
     </>
   )
