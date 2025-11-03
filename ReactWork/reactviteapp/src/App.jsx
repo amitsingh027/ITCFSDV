@@ -8,7 +8,7 @@ import Gallery from './component/gallery'
 function App() {
   return (
     <>
-    <div className='container' >
+    <div className='container1' >
      <h2 >Gallary</h2>
      <Gallery/>
 

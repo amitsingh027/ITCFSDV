@@ -25,6 +25,7 @@ export default function Gallery() {
       section: "B",
       college: "ABESEC"
     },
+
     {
       pic: "https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg",
       name: "Ashok",

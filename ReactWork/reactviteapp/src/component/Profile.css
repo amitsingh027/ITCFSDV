@@ -10,3 +10,11 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+.container1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: fit-content;
+}
