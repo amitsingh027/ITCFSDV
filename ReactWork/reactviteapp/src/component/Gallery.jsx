@@ -6,7 +6,7 @@ export default function Gallery() {
   const students = [
     {
       pic: "https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg",
-      name: "Alok",
+      name: "Amit",
       branch: "IT",
       section: "C",
       college: "ABESEC"
@@ -20,7 +20,7 @@ export default function Gallery() {
     },
     {
       pic: "https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg",
-      name: "Asit",
+      name: "Alok",
       branch: "ECE",
       section: "B",
       college: "ABESEC"
